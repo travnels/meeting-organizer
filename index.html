@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -13,16 +14,169 @@
     </script>
     <script src="thirdparty/jquery.mobile-1.1.1.min.js">
     </script>
+	
+	<!--<link rel='stylesheet' href='style.css'>-->
+	<link rel="stylesheet" href="index.css" />
+	<script text="text/javascript" src="index.js"></script>
 
 </head>
+
 <body>
 <div data-role="page" id="page1">
+
     <div data-theme="a" data-role="header">
         <h3>
-            Meeting Organizer
+			Meeting Organizer
         </h3>
-    </div>
+		
+		<div class="clock">
+		  <ul>
+			  <li id="hours"></li>
+			  <li id="point">:</li>
+			  <li id="min"></li>
+			  <li id="point">:</li>
+			  <li id="sec"></li>
+		  </ul>
+		</div>
+
+	</div>
+	
     <div data-role="content" style="padding: 15px">
+	
+		<h1 align='center'> JMX and High Performance Java </h1>
+		<h3 align='center'> Wednesday, September 12, 2012 </h3>
+		
+		<!--Networking-->
+		<div data-role="collapsible" data-theme="a" data-content-theme="a">	
+			
+			<h2>
+				<div style="width: 100%; ">
+					<div style="float: left;">Networking and Food </div>
+					<div style="float: right;">5:30-6:00</div>
+					<div style="text-align: center;"></div>
+				</div>
+			</h2>
+		
+			<p>
+			   Food, Soda, Beer and Networking. We are grateful to Cody Powell 
+			   from TEksystems for their continued sponsorship of the Food and Soda!  
+			   Also, thanks to Mike Henninger of BWBacon for supplying the beer.
+			</p>
+		</div>
+		
+		<!--Test Progress Bar -->
+		<!--<div class="meter orange nostripes">
+			<span style="width: 33.3%"></span>
+		</div> -->
+		
+		<!--Announcements-->
+		<div data-role="collapsible" data-theme="a" data-content-theme="a">	
+			<h2>
+				<div style="width: 100%; ">
+					<div style="float: left;">Announcements</div>
+					<div style="float: right;">6:00-6:05</div>
+					<div style="text-align: center;"></div>
+				</div>
+			</h2>
+		</div>
+		
+		<!--First Talk-->
+		<div data-role="collapsible" data-theme="a" data-content-theme="a">	
+			<h2>
+				<div style="width: 100%; ">
+					<div style="float: left;">JMX by <a href="speaker1.html" data-rel="dialog" data-transition="pop">Jason Brown</a></div>
+					<div style="float: right;">6:05-7:00</div>
+					<div style="text-align: center;"></div>
+				</div>
+			</h2>
+		
+			<p>
+				Do you know what your service is up to?  If you have critical 
+				services running in a data center or your basement, you need a 
+				way to keep an eye on them.  JMX provides an easy way for your 
+				services to expose their state, allow monitoring tools to inquire 
+				about that state, and provide hooks for management tools to perform 
+				operations on the service.
+			</p>
+			
+			<a href="speaker1.html" data-rel="dialog" data-transition="pop">Jason Brown</a>
+		</div>
+		
+		<!--Break-->
+		<div data-role="collapsible" data-theme="a" data-content-theme="a">	
+			<h2>
+				<div style="width: 100%; ">
+					<div style="float: left;">Break</div>
+					<div style="float: right;">7:00-7:15</div>
+					<div style="text-align: center;"></div>
+				</div>
+			</h2>
+		</div>
+		
+		<!--Second Talk-->
+		<div data-role="collapsible" data-theme="a" data-content-theme="a">	
+			<h2>
+				<div style="width: 100%; ">
+					<div style="float: left;">Causes of Poor Performance by <a href="speaker2.html" data-rel="dialog" data-transition="pop">Simon Roberts</a></div>
+					<div style="float: right;">7:15-8:45</div>
+					<div style="text-align: center;"></div>
+				</div>
+			</h2>
+		
+			<p>
+				Nobody ever complained that their program ran too fast, and keeping tabs on
+				the issues that can adversely affect performance in your code is a necessary 
+				chore. This presentation takes a high level view of many different causes of poor 
+				performance, delving a little more deeply into some of the more interesting and less 
+				well-understood areas. Topics visited include general program design, network and 
+				transactional effects, memory usage, garbage collection issues, the Real-Time System 
+				for Java, and concurrency issues.
+			</p>
+			
+			<a href="speaker2.html" data-rel="dialog" data-transition="pop">Simon Roberts</a>
+		</div>
+		
+		<!--Door Prizes-->
+		<div data-role="collapsible" data-theme="a" data-content-theme="a">	
+			<h2>
+				<div style="width: 100%; ">
+					<div style="float: left;">Door Prizes</div>
+					<div style="float: right;">8:45-9:00</div>
+					<div style="text-align: center;"></div>
+				</div>
+			</h2>
+		
+			<p><b> Rocky Mountain Software Symposium</b> pass - provided by Jay Zimmerman</p>
+			
+			<p><b> DevelopIntelligence Training</b> Safari Online Book Subscription (1-year, 10-slot)</p>
+						
+			<p><b> Lea Homboe of ECS</b> Amazon Gift Cards</p>
+									
+			<p><b> JetBrains</b> IDE License</p>
+			
+			<p><b> ZeroTurnaround</b> JRebel License</p>
+			
+			<p><b> Softpro Books</b> Gift Certificate</p>
+			
+			<p><b> James Ward of Heroku</b> T-shirts and server credits</p>
+		</div>
+		
+		<!--Networking-->
+		<div data-role="collapsible" data-theme="a" data-content-theme="a">	
+			<h2>
+				<div style="width: 100%; ">
+					<div style="float: left;">Networking at Ice House Tavern</div>
+					<div style="float: right;">9:00-10:00</div>
+					<div style="text-align: center;"></div>
+				</div>
+			</h2>
+		
+			<p>
+				Very special thanks to Katie Green from ReadyTalk for their sponsorship of 
+				food at this location.
+			</p>
+		</div>
+		
     </div>
 </div>
 </body>
