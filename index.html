@@ -22,11 +22,11 @@
 </head>
 
 <body>
-<div data-role="page" id="page1">
+<div data-role="page" id="index">
 
     <div data-theme="a" data-role="header">
         <h3>
-			Meeting Organizer
+			Denver Java Users Group
         </h3>
 		
 		<div class="clock">
@@ -67,7 +67,7 @@
 		<!--Test Progress Bar -->
 		<!--<div class="meter orange nostripes">
 			<span style="width: 33.3%"></span>
-		</div> -->
+		</div>--> 
 		
 		<!--Announcements-->
 		<div data-role="collapsible" data-theme="a" data-content-theme="a">	
@@ -99,7 +99,7 @@
 				operations on the service.
 			</p>
 			
-			<a href="speaker1.html" data-rel="dialog" data-transition="pop">Jason Brown</a>
+			<a href="#speaker1" data-rel="dialog" data-transition="pop">Jason Brown</a>
 		</div>
 		
 		<!--Break-->
@@ -133,7 +133,7 @@
 				for Java, and concurrency issues.
 			</p>
 			
-			<a href="speaker2.html" data-rel="dialog" data-transition="pop">Simon Roberts</a>
+			<a href="#speaker2" data-rel="dialog" data-transition="pop">Simon Roberts</a>
 		</div>
 		
 		<!--Door Prizes-->
@@ -179,5 +179,63 @@
 		
     </div>
 </div>
+<div data-role=dialog id=speaker1>
+
+  <div data-role=header>
+    <h1><a>Jason Brown</a></h1>
+  </div>
+
+
+  <div data-role=content>
+
+    <p> 
+		Jason Brown has been programming in BASIC, FORTRAN, C, and Java for 
+		nearly 27 years, getting paid for the last 15 in the CAD/CAM, 
+		Configuration Management, Business Process, Publishing, and Banking 
+		industries.  He is currently the Sr. Software Architect for Harland 
+		Financial Solutions self-service banking products.  His passion is 
+		making software more efficient, reusable, scalable, maintainable, 
+		reliable, and supportable.
+	</p>
+
+  </div>
+
+</div>
+
+<div data-role=dialog id=speaker2>
+
+  <div data-role=header>
+    <h1><a>Simon Roberts</a></h1>
+  </div>
+
+
+  <div data-role=content>
+
+    <p> 
+		Simon Roberts is a freelance trainer, author, consultant, and 
+		developer. He has been creating Java courses and delivering Java 
+		training worldwide since Sun released it in 1995.
+	</p>
+	
+	<p> 
+		Simon worked for Sun Microsystems from 1995 to 2004. He has since 
+		developed and delivered Java training courses for Sun, Oracle, VMWare, 
+		Intel, AMEX and many others. Simon has delivered presentations at JavaOne, 
+		Java University and other software trade shows. He led the development 
+		of the Sun Certified Java Programmer (SJCP), Sun Certified Java Developer 
+		(SCJD), and the Sun Certified Java Architect (SCJA) certification exams. 
+		He has written several best-selling Java books and is currently working 
+		on web/video based training materials.
+	</p>
+	
+	<p> 
+		When not working in the Java field, Simon is a certificated flight 
+		instructor and an avid photographer.
+	</p>
+
+  </div>
+
+</div>
+
 </body>
 </html>
