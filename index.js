@@ -32,7 +32,7 @@ setInterval( function() {
 	// Create a newDate() object and extract the hours of the current time on the visitor's
 	var hours = new Date().getHours();
 	// Add a leading zero to the hours value
-	if (hours < 10)
+	if (hours <= 12)
 		hours=0+hours;
 	else
 		hours=hours-12;
